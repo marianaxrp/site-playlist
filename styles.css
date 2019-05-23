@@ -3,7 +3,6 @@ body {
   font-family: helvetica, sans-serif;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: rgb(209, 212, 219);
 }
 
 header {
@@ -54,10 +53,7 @@ hr {
   backface-visibility: hidden;
 }
 
-
-/* FRONT */ 
-.front,
-.back {
+.container {
   transition: transform 0.5s;
   transform-style: preserve-3d;
   height: 100%;
@@ -84,12 +80,6 @@ hr {
   border-bottom-right-radius: 10px;
 }
 
-.nomeMusica p {
-  font-size: 15px;
-  margin-left: 9px;
-  margin-right: 9px;
-}
-
 .card:hover .container {
   transform: rotateY(180deg);
 }
@@ -99,9 +89,7 @@ hr {
   backface-visibility: hidden;
 }
 
-
-/* BACK */
 .back {
+  background: red; /* não aparece */
   transform: rotateY(180deg);
-  border-radius: 10px;
 }
